@@ -42,5 +42,6 @@ public class Anagramm {
 	{
 		String kWort1 = wort1.toLowerCase();
 		String kWort2 = wort2.toLowerCase();
+		char[] kWort1Array.toCharArray();
 	}
 }
