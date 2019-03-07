@@ -7,7 +7,7 @@ public class PasswortChecker
 		
 		//checker("1bestePasswort2");
 		//pwCheck("hallooooooooO");
-		harshad(100);
+		//harshad(100);
 	}
 	
 	/*public static void checker(String passwort)
@@ -94,12 +94,6 @@ public class PasswortChecker
 				System.out.println(i);
 			}
 		}
-	}
-
-
-	public static void anagram()
-	{
-		
 	}
 
 
