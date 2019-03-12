@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Anagramm {
 	static char[] charArray;
@@ -7,7 +8,7 @@ public class Anagramm {
 	public static void main(String[] args) 
 	{// TODO Auto-generated method stub
 		//hi();
-		anagramm("Nm","Mn");
+		anagramm("Cowbelly","bellcoywe");
 	}
 
 	
@@ -38,10 +39,33 @@ public class Anagramm {
 		
 	}*/
 	
+	
+	
 	public static void anagramm(String wort1, String wort2)
 	{
 		String kWort1 = wort1.toLowerCase();
 		String kWort2 = wort2.toLowerCase();
-		char[] kWort1Array.toCharArray();
+		String kA = kWort1.replaceAll(" ","");
+		String kB = kWort2.replaceAll(" ","");
+		char[] kAArray = kA.toCharArray();
+		char[] kBArray = kB.toCharArray();
+		Arrays.sort(kAArray);
+		Arrays.sort(kBArray);
+		if(kAArray.length==kBArray.length)
+		{
+		for(int i = 0;i>=kAArray.length;i++)
+		{
+			if(kAArray[i]==kBArray[i])
+			{
+				System.out.print(kAArray[i]);
+				System.out.println(kBArray[i]);
+			}
+			else
+			{
+				System.out.print("Kein Anagramm");
+			}
+		}
+		System.out.print("Sind Anagramme");
+		}else {System.out.print("Kein Anagramm");}
 	}
 }
